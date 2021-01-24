@@ -1,0 +1,16 @@
+<Configuration>
+	<Add Channel="SemiAnnual" OfficeClientEdition="64" SourcePath="c:\install\O365" >
+        	<Product ID="O365ProPlusRetail" >
+			<Language ID="en-us" />
+			<Language ID="fr-fr" />
+			<Language ID="nl-nl" />
+			<ExcludeApp ID="Teams" />
+        	</Product>
+    	</Add>
+	<Updates Channel="SemiAnnual" Enabled="TRUE" />	
+	<Display Level="Full" AcceptEULA="TRUE" />
+	<Logging Level="Standard" Path="c:\windows\logs\O365" />
+	<Property Name="FORCEAPPSHUTDOWN" Value="TRUE" />
+	<Property Name="SharedComputerLicensing" Value="1" />
+	<Property Name="PinIconsToTaskbar" Value="FALSE" />
+</Configuration>
